@@ -1,1 +1,10 @@
-
+[
+  { "title": "Integration of Face eKYC", "desc": "Integrate UIDAI-compliant Face eKYC into the ration card application workflow.", "status": "Not Resolved" },
+  { "title": "Enhanced Queue Options", "desc": "Provide search and filter options within queues for priority beneficiaries like disabled or needy application for fast processing.", "status": "Not Resolved" },
+  { "title": "Auto Detect Face While Uploading Image", "desc": "Implement automatic face detection during image upload to validate presence of a human face and restrict non-face images.", "status": "Not Resolved" },
+  { "title": "Mobile Number Modification Feature", "desc": "Introduce a dedicated mobile number modification form to update beneficiary contact details at any time.", "status": "Not Resolved" },
+  { "title": "Bank Account Modification Feature", "desc": "Introduce a dedicated bank account modification form to update beneficiary bank details, including account number, IFSC code, and supporting documents.", "status": "Not Resolved" },
+  { "title": "View Documents Submitted by Beneficiary", "desc": "Provide a document viewing feature that allows users to view all documents submitted/uploaded by the beneficiary in his ration card.", "status": "Not Resolved" },
+  { "title": "Blank RC template form", "desc": "Provide option for citizen to download blank template ration card form so that they can physically fill and submit the form in the office.", "status": "Not Resolved" },
+  { "title": "Dedicated Mobile App Development", "desc": "Make the site mobile responsive or provide a dedicated mobile app for citizens to submit ration card applications.", "status": "Not Resolved" }
+]
