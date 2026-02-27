@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UAT Report Editor - 21th Feb 2026</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UAT Report Editor</title>
+  <link rel="stylesheet" href="style.css?v=20260227-01">
 </head>
 <body>
-
-<div class="header">
+  <div class="header">
     <h1 contenteditable="true">USER ACCEPTANCE TESTING (UAT) REPORT</h1>
-    <p contenteditable="true">NEW ISSUES AS ON DATED: 21th Feb 2026</p>
-</div>
+    <p contenteditable="true">NEW ISSUES AS ON DATED: <span id="report-date"></span></p>
+  </div>
 
-<div class="container">
+  <div class="container">
+    <div class="section-title">EXECUTIVE SUMMARY</div>
+    <div class="summary-box"><!-- summary table injected by script --></div>
 
-<div class="section-title">EXECUTIVE SUMMARY</div>
+    <div class="section-title">PENDING ISSUES</div>
+    <div id="issues-container"></div>
 
-<div class="summary-box">
-<table>
-<tr>
-<th>Total</th>
-<th>Resolved</th>
-<th>Partially</th>
-<th>Pending</th>
-</tr>
-<tr>
-<td id="totalCount">0</td>
-<td id="resolvedCount">0</td>
-<td id="partialCount">0</td>
-<td id="pendingCount">0</td>
-</tr>
-</table>
-</div>
+    <button class="add-btn" onclick="addIssue()">➕ Add Issue</button>
+    <button class="download-btn" onclick="downloadFinal()">⬇ Download Final Report</button>
+  </div>
 
-<div class="section-title">PENDING ISSUES</div>
-
-<div id="issues-container"></div>
-
-<button class="add-btn" onclick="addIssue()">➕ Add Issue</button>
-<button class="download-btn" onclick="downloadFinal()">⬇ Download Final Report</button>
-
-</div>
-
-<script src="script.js"></script>
+  <script src="script.js?v=20260227-01"></script>
+  <script>
+    // Set today's date in DD Mon YYYY
+    document.getElementById('report-date').textContent =
+      new Date().toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric' });
+  </script>
 </body>
 </html>
